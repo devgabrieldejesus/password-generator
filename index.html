@@ -9,37 +9,39 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <div class="container column">
             
-            <div class="result-body">
-                <span id="result"></span>
-                <button class="btn-copy" id="clipboard">Copiar senha</button>
-            </div>
-
-            <div class="options">
-                <div class="options">
-                    <label>Password length</label>
-                    <input type="number" id="length" min='4' max='20' value='20' />
+            <div class="generator-container">
+                <div class="result-body">
+                    <span id="result"></span>
+                    <button class="btn-copy" id="clipboard">Copiar senha</button>
                 </div>
-                
-                <div class="options">
-                    <label>Include uppercase letters</label> 
-                    <input type="checkbox" id="uppercase" checked />
-                </div>
-                
-                <div class="options">
-                    <label>Include lowercase letters</label> 
-                    <input type="checkbox" id="lowercase" checked />
-                </div>
-                
-                <div class="options">
-                    <label>Include numbers</label> 
-                    <input type="checkbox" id="numbers" checked />
-                </div>
-                
-                <div class="options">
-                    <label>Include symbols</label> 
-                    <input type="checkbox" id="symbols" checked />
+    
+                <div class="options column">
+                    <div class="option">
+                        <label>Password length</label>
+                        <input type="number" id="length" min='4' max='20' value='20' />
+                    </div>
+                    
+                    <div class="option">
+                        <label>Include uppercase letters</label> 
+                        <input type="checkbox" id="uppercase" checked />
+                    </div>
+                    
+                    <div class="option">
+                        <label>Include lowercase letters</label> 
+                        <input type="checkbox" id="lowercase" checked />
+                    </div>
+                    
+                    <div class="option">
+                        <label>Include numbers</label> 
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+                    
+                    <div class="option">
+                        <label>Include symbols</label> 
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
                 </div>
             </div>
 

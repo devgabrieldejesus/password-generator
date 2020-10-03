@@ -30,3 +30,31 @@ body {
     flex-direction: column;
 }
 /* ===================================================== main ===================================================== */
+main {
+    height: 536px;
+    display: flex;
+    justify-content: center;
+    margin-top: 116px;
+}
+
+main .container {
+    border-radius: 30px;
+    background-color: #FFF;
+    box-shadow: 0px 40px 40px #88888840;
+}
+
+.generator-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.options {
+    width: 346px;
+    height: 496px;
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--primary);
+}
