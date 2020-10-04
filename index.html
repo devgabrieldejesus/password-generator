@@ -12,7 +12,8 @@
         <div class="container column">
             
             <div class="generator-container">
-                <div class="result-body">
+                <div class="result-body column">
+                    <label>Gerador de senhas</label>
                     <span id="result"></span>
                     <button class="btn-copy" id="clipboard">Copiar senha</button>
                 </div>
@@ -20,7 +21,7 @@
                 <div class="options column">
                     <div class="option">
                         <label>Password length</label>
-                        <input type="number" id="length" min='4' max='20' value='20' />
+                        <input type="number" id="length" min='4' max='32' value='32' />
                     </div>
                     
                     <div class="option">
@@ -42,10 +43,13 @@
                         <label>Include symbols</label> 
                         <input type="checkbox" id="symbols" checked />
                     </div>
+
+                    <button class="btn-generate" id="generate">Gerar senha</button>
+
                 </div>
             </div>
 
-            <button class="btn-generate" id="generate">Gerar senha</button>
+            
 
         </div>
     </main>
