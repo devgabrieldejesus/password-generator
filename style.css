@@ -141,3 +141,59 @@ main .container {
     color: #FFF;
     background-color: var(--orange);
 }
+
+/* ===================================================== responsive ===================================================== */
+
+@media  (max-width:1060px) {
+    main {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .container {
+        margin: 0px 10px 30px 10px;
+    }
+    
+    .generator-container {
+        padding: 30px 0px 30px 0px; 
+        flex-direction: column;
+    }
+
+    #password-copied {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .options {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    #result {
+        width: 400px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 470px) {
+    #result {
+        width: 100%;
+        font-size: 15px;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .option {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        margin: 0;
+        max-width: 315px;
+    }
+    .option {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
