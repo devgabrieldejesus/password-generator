@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=0">
     <title>Gerador de senhas</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/svg" sizes="72x72" href="images/icon-72x72.svg">
 </head>
 <body>
     <main>
@@ -16,6 +17,7 @@
                     <label>Gerador de senhas</label>
                     <span id="result"></span>
                     <button class="btn-copy" id="clipboard">Copiar senha</button>
+                    <p id="password-copied"></p>
                 </div>
     
                 <div class="options column">
@@ -25,7 +27,7 @@
                     </div>
                     
                     <div class="option">
-                        <label>Include uppercase letters</label> 
+                        <label>Include uppercase letters</label>
                         <input type="checkbox" id="uppercase" checked />
                     </div>
                     
@@ -40,7 +42,7 @@
                     </div>
                     
                     <div class="option">
-                        <label>Include symbols</label> 
+                        <label>Include symbols</label>
                         <input type="checkbox" id="symbols" checked />
                     </div>
 
@@ -48,8 +50,6 @@
 
                 </div>
             </div>
-
-            
 
         </div>
     </main>

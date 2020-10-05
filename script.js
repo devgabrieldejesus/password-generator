@@ -7,6 +7,7 @@ const numbersElement = document.getElementById('numbers');
 const symbolsElement = document.getElementById('symbols');
 const generateElement = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
+const passwordCopied = document.getElementById('password-copied');
 
 const aleatory = {
     lower: getAleatoryLower,
@@ -27,7 +28,7 @@ clipboard.addEventListener('click', () => {
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
-    alert('Password copied to clipboard');
+    passwordCopied.innerHTML = 'Senha copiada com sucesso';
 });
 
 generate.addEventListener('click', () => {
@@ -40,7 +41,13 @@ generate.addEventListener('click', () => {
     resultElement.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
+// generating password
 function generatePassword(lower, upper, number, symbol, length) {
+
+    // clearing copied password message
+    passwordCopied.innerHTML = '';
+
+    // clearing generated password
     let generatedPassword = '';
     const typesCount = lower + upper + number + symbol;
     const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
@@ -60,7 +67,14 @@ function generatePassword(lower, upper, number, symbol, length) {
 
     const finalPassword = generatedPassword.slice(0, length);
 
-    return finalPassword;
+    // check if the password entered is greater than the maximum possible
+    if(finalPassword.length > 32) {
+        alert('Sua senha deve ter até 32 caracteres');
+        return finalPassword = '';
+    } else {
+        return finalPassword;
+    }
+    
 }
 
 function getAleatoryLower() {

@@ -15,6 +15,7 @@
 }
 
 body {
+    transition: all ease 0.3s;
     background-color: #F2F9FF;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,6 +90,11 @@ main .container {
     background-color: var(--primary);
 }
 
+#password-copied {
+    margin-top: 10px;
+    color: var(--orange);
+}
+
 .result-body button {
     margin-top: 30px;
     color: #FFF;
@@ -100,14 +106,38 @@ main .container {
     width: 346px;
     height: 496px;
     display: flex;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     border-radius: 30px;
+    padding-top: 63px;
     background-color: var(--primary);
 }
 
+.option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
 
+.option input {
+    width: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid #FFF;
+}
 
-
-
-
-
+#generate {
+    height: 60px;
+    margin-top: 12px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: var(--orange);
+}
