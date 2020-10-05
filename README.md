@@ -2,6 +2,7 @@
 
 Generator of random passwords based on what the user selects (uppercase letters, lowercase letters, numbers, symbols, etc.).
 
+`Web preview`
 ![](images/web-preview.gif)
 
 ## Deployment in
