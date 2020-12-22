@@ -1,4 +1,4 @@
-# Under maintenance
+# Password Generator
 
 🔑 Generator of random passwords based on what the user selects (uppercase letters, lowercase letters, numbers, symbols, etc.).
 
